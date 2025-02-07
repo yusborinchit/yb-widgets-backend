@@ -8,6 +8,9 @@
     "build": "tsc",
     "start": "node dist/index.js"
   },
+  "imports": {
+    "~/*": "./src/*"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,11 +21,16 @@
     "tmi.js": "^1.8.5"
   },
   "devDependencies": {
+    "@eslint/js": "^9.19.0",
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.0",
     "@types/tmi.js": "^1.8.6",
+    "eslint": "^9.19.0",
+    "eslint-plugin-perfectionist": "^4.8.0",
     "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.23.0"
   }
 }
