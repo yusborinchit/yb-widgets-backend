@@ -15,6 +15,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@twurple/api": "^7.2.1",
+    "@twurple/auth": "^7.2.1",
+    "@twurple/eventsub-ws": "^7.2.1",
+    "@twurple/pubsub": "^7.2.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "socket.io": "^4.8.1",
@@ -22,6 +27,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.0",
     "@types/tmi.js": "^1.8.6",

@@ -8,6 +8,21 @@ importers:
 
   .:
     dependencies:
+      '@twurple/api':
+        specifier: ^7.2.1
+        version: 7.2.1(@twurple/auth@7.2.1)
+      '@twurple/auth':
+        specifier: ^7.2.1
+        version: 7.2.1
+      '@twurple/eventsub-ws':
+        specifier: ^7.2.1
+        version: 7.2.1(@twurple/api@7.2.1(@twurple/auth@7.2.1))
+      '@twurple/pubsub':
+        specifier: ^7.2.1
+        version: 7.2.1(@twurple/auth@7.2.1)
+      cors:
+        specifier: ^2.8.5
+        version: 2.8.5
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
@@ -24,6 +39,9 @@ importers:
       '@eslint/js':
         specifier: ^9.19.0
         version: 9.19.0
+      '@types/cors':
+        specifier: ^2.8.17
+        version: 2.8.17
       '@types/express':
         specifier: ^5.0.0
         version: 5.0.0
@@ -60,6 +78,39 @@ packages:
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
     engines: {node: '>=12'}
+
+  '@d-fischer/cache-decorators@4.0.1':
+    resolution: {integrity: sha512-HNYLBLWs/t28GFZZeqdIBqq8f37mqDIFO6xNPof94VjpKvuP6ROqCZGafx88dk5zZUlBfViV9jD8iNNlXfc4CA==}
+
+  '@d-fischer/connection@9.0.0':
+    resolution: {integrity: sha512-Mljp/EbaE+eYWfsFXUOk+RfpbHgrWGL/60JkAvjYixw6KREfi5r17XdUiXe54ByAQox6jwgdN2vebdmW1BT+nQ==}
+
+  '@d-fischer/cross-fetch@5.0.5':
+    resolution: {integrity: sha512-symjDUPInTrkfIsZc2n2mo9hiAJLcTJsZkNICjZajEWnWpJ3s3zn50/FY8xpNUAf5w3eFuQii2wxztTGpvG1Xg==}
+
+  '@d-fischer/detect-node@3.0.1':
+    resolution: {integrity: sha512-0Rf3XwTzuTh8+oPZW9SfxTIiL+26RRJ0BRPwj5oVjZFyFKmsj9RGfN2zuTRjOuA3FCK/jYm06HOhwNK+8Pfv8w==}
+
+  '@d-fischer/isomorphic-ws@7.0.2':
+    resolution: {integrity: sha512-xK+qIJUF0ne3dsjq5Y3BviQ4M+gx9dzkN+dPP7abBMje4YRfow+X9jBgeEoTe5e+Q6+8hI9R0b37Okkk8Vf0hQ==}
+    peerDependencies:
+      ws: ^8.2.0
+
+  '@d-fischer/logger@4.2.3':
+    resolution: {integrity: sha512-mJUx9OgjrNVLQa4od/+bqnmD164VTCKnK5B4WOW8TX5y/3w2i58p+PMRE45gUuFjk2BVtOZUg55JQM3d619fdw==}
+
+  '@d-fischer/qs@7.0.2':
+    resolution: {integrity: sha512-yAu3xDooiL+ef84Jo8nLjDjWBRk7RXk163Y6aTvRB7FauYd3spQD/dWvgT7R4CrN54Juhrrc3dMY7mc+jZGurQ==}
+    engines: {node: '>=0.6'}
+
+  '@d-fischer/rate-limiter@1.0.1':
+    resolution: {integrity: sha512-Mq+0pAJsx92hP83cjmsrXQZVQJ+/+u1JFT6fjH8pj3yfUrbT3eDBsA+6J63eat+QaC+Mci78HdiBfpsdBkdwog==}
+
+  '@d-fischer/shared-utils@3.6.4':
+    resolution: {integrity: sha512-BPkVLHfn2Lbyo/ENDBwtEB8JVQ+9OzkjJhUunLaxkw4k59YFlQxUUwlDBejVSFcpQT0t+D3CQlX+ySZnQj0wxw==}
+
+  '@d-fischer/typed-event-emitter@3.3.3':
+    resolution: {integrity: sha512-OvSEOa8icfdWDqcRtjSEZtgJTFOFNgTjje7zaL0+nAtu2/kZtRCSK5wUMrI/aXtCH8o0Qz2vA8UqkhWUTARFQQ==}
 
   '@eslint-community/eslint-utils@4.4.1':
     resolution: {integrity: sha512-s3O3waFUrMV8P/XaF/+ZTp1X9XBZW1a4B97ZnjQF2KYWaFD2A8KyFBsrsfSjEmjn3RGWAIuvlneuZm3CUK3jbA==}
@@ -152,6 +203,33 @@ packages:
   '@tsconfig/node16@1.0.4':
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
 
+  '@twurple/api-call@7.2.1':
+    resolution: {integrity: sha512-x+p6fMleFA/pJHVu8tFpkDkARGGt30EAUA+cLc+dEtU1EpH1mv7nv5LLHh9NW9vdZpYp0jk5TyY/TSbHdj7Ggw==}
+
+  '@twurple/api@7.2.1':
+    resolution: {integrity: sha512-fqoX87GyHRL4pSmgloF5Mfj2XDJMx8fWBbcl4JGG7bgF2jvH5X9p3nzH169zqwSU/etfUdfytyoQ7/r2R+G3cg==}
+    peerDependencies:
+      '@twurple/auth': 7.2.1
+
+  '@twurple/auth@7.2.1':
+    resolution: {integrity: sha512-IGHsJ/g0RblRSBC59XKA9277rE5w1dAKdhCPQz1QwkWnt6fsUyVoD1ut+qZvjuh7ssX1SBtNzFqohydfmWZytg==}
+
+  '@twurple/common@7.2.1':
+    resolution: {integrity: sha512-veLY5laA00dPuekAcpHN6GDvnr6s1uH7yBDebLC1NhpcLkQgiAlGA50RdNS5YeA3xz7kfE2MOcYSi2S6Qoc7EA==}
+
+  '@twurple/eventsub-base@7.2.1':
+    resolution: {integrity: sha512-QDhYFetOXCaX2HGOe6GpVBKtddSZ7uLwo+N8r08gc33TAz+xUwLQY5MhixA2v+KNyEoWih4xMemOKRDo6lIm5Q==}
+
+  '@twurple/eventsub-ws@7.2.1':
+    resolution: {integrity: sha512-hGOn0EWnO+x9/K0eC2nVYgtbbuWdIc9yedaucuNNf8qxGe7SaHj509nKiLJQ+8PKsD6sK6PTfuHhU4G2PpsUSw==}
+    peerDependencies:
+      '@twurple/api': 7.2.1
+
+  '@twurple/pubsub@7.2.1':
+    resolution: {integrity: sha512-w8PQgPZNmfp5bDmH2z6VPqMlvTQtQFmZJrTqK6eMHYr6Wy5JzNVaO2m/C6QZZ4zG+gTqWCc2x5AgI5AA59sdiQ==}
+    peerDependencies:
+      '@twurple/auth': 7.2.1
+
   '@types/body-parser@1.19.5':
     resolution: {integrity: sha512-fB3Zu92ucau0iQ0JMCFQE7b/dv8Ot07NI3KaZIkIUNXq82k4eBAqUaneXfleGY9JWskeS9y+u0nXMyspcuQrCg==}
 
@@ -196,6 +274,9 @@ packages:
 
   '@types/tmi.js@1.8.6':
     resolution: {integrity: sha512-LVzNK7AxTMyh9qHLanAQR1o0I9XzfbIcXk85cx85igmCJHHO1Sm71sdhQ8Mj1WmRGzynPIoCXx6mVaFynWbsQw==}
+
+  '@types/ws@8.5.14':
+    resolution: {integrity: sha512-bd/YFLW+URhBzMXurx7lWByOu+xzU9+kb3RboOteXYDfW+tr+JZa99OyNmPINEGB/ahzKrEuc8rcv4gnpJmxTw==}
 
   '@typescript-eslint/eslint-plugin@8.23.0':
     resolution: {integrity: sha512-vBz65tJgRrA1Q5gWlRfvoH+w943dq9K1p1yDBY2pc+a1nbBLZp7fB9+Hk8DaALUbzjqlMfgaqlVPT1REJdkt/w==}
@@ -668,6 +749,10 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
+  klona@2.0.6:
+    resolution: {integrity: sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==}
+    engines: {node: '>= 8'}
+
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
@@ -850,6 +935,10 @@ packages:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
 
+  retry@0.13.1:
+    resolution: {integrity: sha512-XQBQ3I8W1Cge0Seh+6gjj03LbmRFWuoszgK9ooCpwYIrhhoO80pfq4cUkU5DkknwfOfFteRwlZ56PYOGYyFWdg==}
+    engines: {node: '>= 4'}
+
   reusify@1.0.4:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
@@ -973,6 +1062,9 @@ packages:
       '@swc/wasm':
         optional: true
 
+  tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
@@ -1070,6 +1162,58 @@ snapshots:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
 
+  '@d-fischer/cache-decorators@4.0.1':
+    dependencies:
+      '@d-fischer/shared-utils': 3.6.4
+      tslib: 2.8.1
+
+  '@d-fischer/connection@9.0.0':
+    dependencies:
+      '@d-fischer/isomorphic-ws': 7.0.2(ws@8.18.0)
+      '@d-fischer/logger': 4.2.3
+      '@d-fischer/shared-utils': 3.6.4
+      '@d-fischer/typed-event-emitter': 3.3.3
+      '@types/ws': 8.5.14
+      tslib: 2.8.1
+      ws: 8.18.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
+  '@d-fischer/cross-fetch@5.0.5':
+    dependencies:
+      node-fetch: 2.7.0
+    transitivePeerDependencies:
+      - encoding
+
+  '@d-fischer/detect-node@3.0.1': {}
+
+  '@d-fischer/isomorphic-ws@7.0.2(ws@8.18.0)':
+    dependencies:
+      ws: 8.18.0
+
+  '@d-fischer/logger@4.2.3':
+    dependencies:
+      '@d-fischer/detect-node': 3.0.1
+      '@d-fischer/shared-utils': 3.6.4
+      tslib: 2.8.1
+
+  '@d-fischer/qs@7.0.2': {}
+
+  '@d-fischer/rate-limiter@1.0.1':
+    dependencies:
+      '@d-fischer/logger': 4.2.3
+      '@d-fischer/shared-utils': 3.6.4
+      tslib: 2.8.1
+
+  '@d-fischer/shared-utils@3.6.4':
+    dependencies:
+      tslib: 2.8.1
+
+  '@d-fischer/typed-event-emitter@3.3.3':
+    dependencies:
+      tslib: 2.8.1
+
   '@eslint-community/eslint-utils@4.4.1(eslint@9.19.0)':
     dependencies:
       eslint: 9.19.0
@@ -1156,6 +1300,91 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
+  '@twurple/api-call@7.2.1':
+    dependencies:
+      '@d-fischer/cross-fetch': 5.0.5
+      '@d-fischer/qs': 7.0.2
+      '@d-fischer/shared-utils': 3.6.4
+      '@twurple/common': 7.2.1
+      tslib: 2.8.1
+    transitivePeerDependencies:
+      - encoding
+
+  '@twurple/api@7.2.1(@twurple/auth@7.2.1)':
+    dependencies:
+      '@d-fischer/cache-decorators': 4.0.1
+      '@d-fischer/cross-fetch': 5.0.5
+      '@d-fischer/detect-node': 3.0.1
+      '@d-fischer/logger': 4.2.3
+      '@d-fischer/rate-limiter': 1.0.1
+      '@d-fischer/shared-utils': 3.6.4
+      '@d-fischer/typed-event-emitter': 3.3.3
+      '@twurple/api-call': 7.2.1
+      '@twurple/auth': 7.2.1
+      '@twurple/common': 7.2.1
+      retry: 0.13.1
+      tslib: 2.8.1
+    transitivePeerDependencies:
+      - encoding
+
+  '@twurple/auth@7.2.1':
+    dependencies:
+      '@d-fischer/logger': 4.2.3
+      '@d-fischer/shared-utils': 3.6.4
+      '@d-fischer/typed-event-emitter': 3.3.3
+      '@twurple/api-call': 7.2.1
+      '@twurple/common': 7.2.1
+      tslib: 2.8.1
+    transitivePeerDependencies:
+      - encoding
+
+  '@twurple/common@7.2.1':
+    dependencies:
+      '@d-fischer/shared-utils': 3.6.4
+      klona: 2.0.6
+      tslib: 2.8.1
+
+  '@twurple/eventsub-base@7.2.1':
+    dependencies:
+      '@d-fischer/logger': 4.2.3
+      '@d-fischer/shared-utils': 3.6.4
+      '@d-fischer/typed-event-emitter': 3.3.3
+      '@twurple/api': 7.2.1(@twurple/auth@7.2.1)
+      '@twurple/auth': 7.2.1
+      '@twurple/common': 7.2.1
+      tslib: 2.8.1
+    transitivePeerDependencies:
+      - encoding
+
+  '@twurple/eventsub-ws@7.2.1(@twurple/api@7.2.1(@twurple/auth@7.2.1))':
+    dependencies:
+      '@d-fischer/connection': 9.0.0
+      '@d-fischer/logger': 4.2.3
+      '@d-fischer/shared-utils': 3.6.4
+      '@d-fischer/typed-event-emitter': 3.3.3
+      '@twurple/api': 7.2.1(@twurple/auth@7.2.1)
+      '@twurple/auth': 7.2.1
+      '@twurple/common': 7.2.1
+      '@twurple/eventsub-base': 7.2.1
+      tslib: 2.8.1
+    transitivePeerDependencies:
+      - bufferutil
+      - encoding
+      - utf-8-validate
+
+  '@twurple/pubsub@7.2.1(@twurple/auth@7.2.1)':
+    dependencies:
+      '@d-fischer/connection': 9.0.0
+      '@d-fischer/logger': 4.2.3
+      '@d-fischer/shared-utils': 3.6.4
+      '@d-fischer/typed-event-emitter': 3.3.3
+      '@twurple/auth': 7.2.1
+      '@twurple/common': 7.2.1
+      tslib: 2.8.1
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
@@ -1211,6 +1440,10 @@ snapshots:
       '@types/send': 0.17.4
 
   '@types/tmi.js@1.8.6': {}
+
+  '@types/ws@8.5.14':
+    dependencies:
+      '@types/node': 22.13.1
 
   '@typescript-eslint/eslint-plugin@8.23.0(@typescript-eslint/parser@8.23.0(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)(typescript@5.7.3)':
     dependencies:
@@ -1758,6 +1991,8 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
+  klona@2.0.6: {}
+
   levn@0.4.1:
     dependencies:
       prelude-ls: 1.2.1
@@ -1903,6 +2138,8 @@ snapshots:
       picomatch: 2.3.1
 
   resolve-from@4.0.0: {}
+
+  retry@0.13.1: {}
 
   reusify@1.0.4: {}
 
@@ -2065,6 +2302,8 @@ snapshots:
       typescript: 5.7.3
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
+
+  tslib@2.8.1: {}
 
   type-check@0.4.0:
     dependencies:
