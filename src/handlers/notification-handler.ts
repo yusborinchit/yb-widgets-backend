@@ -11,7 +11,7 @@ export function notificationHandler(namespace: Namespace, socket: Socket) {
   socket.on("notification_connect", async (channelName, refreshToken) => {
     if (!channelName || !refreshToken) return;
 
-    const authProvider = getAuthProvider(refreshToken);
+    const authProvider = await getAuthProvider(refreshToken);
     const apiClient = new ApiClient({ authProvider });
 
     const channel = await apiClient.users.getUserByName(channelName);

@@ -1,16 +1,17 @@
 import { RefreshingAuthProvider } from "@twurple/auth";
 
-const clientId = process.env.TWITCH_CLIENT_ID!;
-const clientSecret = process.env.TWITCH_CLIENT_SECRET!;
+export async function getAuthProvider(refreshToken: string) {
+  const clientId = process.env.TWITCH_CLIENT_ID!;
+  const clientSecret = process.env.TWITCH_CLIENT_SECRET!;
+  const host = process.env.HOST!;
 
-export function getAuthProvider(refreshToken: string) {
   const authProvider = new RefreshingAuthProvider({
     clientId,
     clientSecret,
-    redirectUri: "http://localhost:3000/api/auth/callback/twitch",
+    redirectUri: `${host}/api/auth/callback/twitch`,
   });
 
-  authProvider.addUserForToken({
+  await authProvider.addUserForToken({
     refreshToken,
     expiresIn: 0,
     obtainmentTimestamp: Date.now(),

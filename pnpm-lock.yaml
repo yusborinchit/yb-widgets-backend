@@ -32,6 +32,9 @@ importers:
       socket.io:
         specifier: ^4.8.1
         version: 4.8.1
+      tmi-emote-parse:
+        specifier: ^2.0.0
+        version: 2.0.0
       tmi.js:
         specifier: ^1.8.5
         version: 1.8.5
@@ -1022,6 +1025,9 @@ packages:
   supports-color@7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
+
+  tmi-emote-parse@2.0.0:
+    resolution: {integrity: sha512-nCYFhp9XPvpks/yE3uCBVKgrB44a/VpwbQVbA1Q0v7qz+7tePT/EOn6nT3MvQ1LYHCOrFvrl5pybqb+ZkiZTIQ==}
 
   tmi.js@1.8.5:
     resolution: {integrity: sha512-A9qrydfe1e0VWM9MViVhhxVgvLpnk7pFShVUWePsSTtoi+A1X+Zjdoa7OJd7/YsgHXGj3GkNEvnWop/1WwZuew==}
@@ -2261,6 +2267,12 @@ snapshots:
   supports-color@7.2.0:
     dependencies:
       has-flag: 4.0.0
+
+  tmi-emote-parse@2.0.0:
+    dependencies:
+      node-fetch: 2.7.0
+    transitivePeerDependencies:
+      - encoding
 
   tmi.js@1.8.5:
     dependencies:
