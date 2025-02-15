@@ -23,15 +23,15 @@ chatNamespace.on("connection", (socket) => {
 
 const notificationNamespace = io.of("/notification");
 notificationNamespace.on("connection", (socket) => {
-  notificationHandler(chatNamespace, socket);
+  notificationHandler(notificationNamespace, socket);
+});
+
+app.get("/", (_req, res) => {
+  res.json({ github: "https://github.com/yusborinchit" });
 });
 
 const PORT = process.env.PORT || 8080;
 const HOST = process.env.HOST || "http://localhost";
-
-app.get("/", (_req, res) => {
-  res.json({ message: "Hello World" });
-});
 
 server.listen(PORT, () => {
   console.log(`🚀 Server running on ${HOST}:${PORT}`);

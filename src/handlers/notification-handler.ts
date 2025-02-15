@@ -22,6 +22,14 @@ export function notificationHandler(namespace: Namespace, socket: Socket) {
     if (!notificationListeners[channelName]) {
       const listener = new EventSubWsListener({ apiClient });
 
+      listener.onChannelRaidTo(channelId, (event) => {
+        namespace.to(channelName).emit("notification_event", {
+          type: "raid",
+          username: event.raidingBroadcasterName,
+          viewerCount: event.viewers,
+        });
+      });
+
       listener.onChannelFollow(channelId, channelId, (event) => {
         namespace.to(channelName).emit("notification_event", {
           type: "follow",
